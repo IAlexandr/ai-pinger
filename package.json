@@ -1,0 +1,19 @@
+{
+  "name": "ai-pinger",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAlexandr/ai-pinger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IAlexandr/ai-pinger/issues"
+  },
+  "homepage": "https://github.com/IAlexandr/ai-pinger#readme"
+}
