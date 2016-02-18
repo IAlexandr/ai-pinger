@@ -1,3 +1,5 @@
 var api = require('./lib/api');
+var wsServer = require('./lib/wserver');
 
-api.listen();
+var app = api.listen();
+wsServer.listen(app);
