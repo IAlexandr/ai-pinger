@@ -43,7 +43,7 @@ var servers = {
         ip: '110.10.0.252',
         gtw: '',
         dns: '',
-        dnsName: 'si-sdgis'
+        dnsName: ''//'si-sdgis'
       }
     }
   }
