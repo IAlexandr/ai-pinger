@@ -61,7 +61,7 @@ module.exports = {
     host: '110.10.0.227',
     port: 4445,
     path: '', // without '/'
-    typeServices: ['slack']  // slack, gmail
+    types: ['slack','gmail']  // slack, gmail
   },
   pinger: { // ключ - наименование машины где установлен пингер к которому подключается.
     'si-sdgis': {
