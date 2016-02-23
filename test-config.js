@@ -54,7 +54,14 @@ module.exports = {
     description: 'Тестовый родительский пингер',
     serverName: 'si-sdai',  // наименование машины где установлен.
     port: 8089, // порт на котором запущен ws и api
+    debugging: true,  // logMode
     //regHosts: [servers['si-sdgis']]  // если нет ключа или пустой массив, то разрешаются все адреса.
+  },
+  notificationService: {
+    host: '110.10.0.227',
+    port: 4445,
+    path: '', // without '/'
+    typeServices: ['slack']  // slack, gmail
   },
   pinger: { // ключ - наименование машины где установлен пингер к которому подключается.
     'si-sdgis': {
