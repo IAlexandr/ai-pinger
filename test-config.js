@@ -43,7 +43,7 @@ var servers = {
         ip: '110.10.0.252',
         gtw: '',
         dns: '',
-        dnsName: ''//'si-sdgis'
+        dnsName: 'si-sdgis'//
       }
     }
   }
@@ -54,25 +54,33 @@ module.exports = {
     description: 'Тестовый родительский пингер',
     serverName: 'si-sdai',  // наименование машины где установлен.
     port: 8089, // порт на котором запущен ws и api
-    debugging: true,  // logMode
+    debugging: false,  // logMode
     //regHosts: [servers['si-sdgis']]  // если нет ключа или пустой массив, то разрешаются все адреса.
   },
   notificationService: {
     host: '110.10.0.227',
     port: 4445,
     path: '', // without '/'
-    types: ['slack','gmail']  // slack, gmail
+    types: ['slack']  // slack, gmail
   },
   pinger: { // ключ - наименование машины где установлен пингер к которому подключается.
-    'si-sdgis': {
-      network: '110.10.0',
-      port: 8089
-    },
+    // 'si-sdgis': {
+    //   network: '110.10.0',
+    //   port: 8089
+    // },
     // 'aipc-ecqx25v7': {
     //   //parent: true, // при условии если у этого пингера нет прямого доступа к этому пингеру.
     //   network: 'internet',
     //   port: 8088
     // }
+  },
+  app: {
+    'notification-service': {
+      checkType: 'http',
+      host: '110.10.0.227',
+      path: '',
+      port: 4445
+    },
   },
   server: servers
 };
