@@ -55,7 +55,7 @@ module.exports = {
     serverName: 'si-sdai',  // наименование машины где установлен.
     port: 8089, // порт на котором запущен ws и api
     debugging: false,  // logMode
-    //regHosts: [servers['si-sdgis']]  // если нет ключа или пустой массив, то разрешаются все адреса.
+    //regHosts: ['11.11.11.11']  // если нет ключа или пустой массив, то разрешаются все адреса.
   },
   notificationService: {
     host: '110.10.0.227',
@@ -64,10 +64,10 @@ module.exports = {
     types: ['slack']  // slack, gmail
   },
   pinger: { // ключ - наименование машины где установлен пингер к которому подключается.
-    // 'si-sdgis': {
-    //   network: '110.10.0',
-    //   port: 8089
-    // },
+    'si-sdarcmap': {
+      network: '110.10.0',
+      port: 8089
+    },
     // 'aipc-ecqx25v7': {
     //   //parent: true, // при условии если у этого пингера нет прямого доступа к этому пингеру.
     //   network: 'internet',
@@ -75,11 +75,11 @@ module.exports = {
     // }
   },
   app: {
-    'notification-service': {
+    'test http-server': {
       checkType: 'http',
-      host: '110.10.0.227',
+      host: 'localhost',
       path: '',
-      port: 4445
+      port: 8888
     },
   },
   server: servers
