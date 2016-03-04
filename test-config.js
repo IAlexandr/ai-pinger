@@ -57,17 +57,17 @@ module.exports = {
     debugging: false,  // logMode
     //regHosts: ['11.11.11.11']  // если нет ключа или пустой массив, то разрешаются все адреса.
   },
-  notificationService: {
-    host: '110.10.0.227',
-    port: 4445,
-    path: '', // without '/'
-    types: ['slack']  // slack, gmail
-  },
+  // notificationService: {
+  //   host: '110.10.0.227',
+  //   port: 4445,
+  //   path: '', // without '/'
+  //   types: ['slack']  // slack, gmail
+  // },
   pinger: { // ключ - наименование машины где установлен пингер к которому подключается.
-    'si-sdarcmap': {
-      network: '110.10.0',
-      port: 8089
-    },
+    // 'si-sdarcmap': {
+    //   network: '110.10.0',
+    //   port: 8089
+    // },
     // 'aipc-ecqx25v7': {
     //   //parent: true, // при условии если у этого пингера нет прямого доступа к этому пингеру.
     //   network: 'internet',
@@ -79,7 +79,7 @@ module.exports = {
       checkType: 'http',
       host: 'localhost',
       path: '',
-      port: 8888
+      port: 8090
     },
   },
   server: servers
